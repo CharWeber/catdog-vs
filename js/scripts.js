@@ -7,10 +7,10 @@ $("document").ready(function() {
     $("ul#doggo").prepend("<li><em>sad howl</em></li>");
     $("ul#catto").prepend("<li><strong> HISSSSSSS</strong></li>");
     });
-  $("ul").click(function(){
-    $(this).after("<div id='pig'><img src='img/babe.jpg'></div>");
-    });
-  $("div#pig").children("img").first().click(function() {
-    $(this).remove();
+  $("h1").click(function(){
+    $("ul#doggo").append("<li><img src='img/babe.jpg'></li>");
+    $("ul#doggo").children("li").click(function() {
+      $(this).remove();
+      });
     });
 });
